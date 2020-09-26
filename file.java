@@ -27,6 +27,8 @@ position=position;
 }
 if(position<0)
 position=0;
+if(position>100)
+position-=die;
 System.out.println("Position of player is "+position);
 }
 }
