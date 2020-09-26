@@ -5,6 +5,7 @@ public static final int snake=2;
 public static void main(String args[])
 {
 int position=0;
+int count=0;
 System.out.println("Welcome to Snake and Ladder");
 while(position<100)
 {
@@ -30,6 +31,8 @@ position=0;
 if(position>100)
 position-=die;
 System.out.println("Position of player is "+position);
+count++;
 }
+System.out.println("No of times the die was played to win the game is "+count);
 }
 }
